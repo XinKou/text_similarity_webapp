@@ -23,10 +23,7 @@ logger = logging.getLogger('app')
 
 class PredictForm(Form):
     """Fields for Predict"""
-    # sepal_length = fields.DecimalField('Sepal Length:', places=2, validators=[Required()])
-    # sepal_width = fields.DecimalField('Sepal Width:', places=2, validators=[Required()])
-    # petal_length = fields.DecimalField('Petal Length:', places=2, validators=[Required()])
-    # petal_width = fields.DecimalField('Petal Width:', places=2, validators=[Required()])
+   
     text_1 = fields.TextAreaField('Text 1:', validators=[Required()])
     text_2 = fields.TextAreaField('Text 2:', validators=[Required()])
 
