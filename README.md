@@ -2,8 +2,12 @@
 
 It is a flask web App that interfaces with a trained neural netowork to predict the similarity between two short texts. This web app provides two text boxes for users to enter the text they wish to compare and returns with an answer such as *very similar*,  *similar* or *not similar*.  
 
-To predict text similarity, an **LSTM** network with **word2vec** and **GloVe** as the word embeddings is trained on more than 400K [Quora Question Pairs][]. This model was trained on AWS EC2 using GPU for performance. Due to the long traning time of the model (especially for CPU), I include an already trained LSTM model. 
+To predict text similarity, an **LSTM** network with **word2vec** and **GloVe** as the word embeddings is trained on more than 400K [Quora Question Pairs][]. This model was trained on AWS EC2 using GPU for performance. Due to the long traning time of the model (especially for CPU), I include an already trained LSTM model, which can be downloaded [here][] (please save it to the models folder after you download it).
+
 [quora question pairs]: https://www.kaggle.com/c/quora-question-pairs/data
+
+[here]: https://drive.google.com/file/d/1Wpmaayk1206LdxgYpb--2Dx-ZKI4I5wl/view?usp=sharing
+
 ## Setup Environment on Local Machine
 
 * Verify you have anaconda or miniconda installed by typing `conda` in your terminal window.
