@@ -1,0 +1,47 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+  <section class="header">
+    <h2 class="title">Texts Similarity Prediction App</h2>
+  </section>
+  <hr />
+
+  <div class="content">
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      <div class="row">
+        <div class="six columns">
+          {{ form.text_1.label }} {{ form.text_1() }}
+        </div>
+        <div class="six columns">
+          {{ form.text_2.label }} {{ form.text_2() }}
+        </div>
+
+      </div>
+      <div class="row">
+        <button type="submit" class="button-primary">Submit</button>
+      </div>
+    </form>
+    {% if prediction %}
+      <div class="row">
+        <div class="six columns">
+          <h2>They are {{ prediction }}.</h2>
+          
+        
+        </div>
+        <div class="six columns">
+         <!--  Your Chart or any other form of visualizations -->
+         <div id="chart"></div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endblock body %}
+
+{% block js %}
+  <script type="text/javascript">
+  // your JS Code
+  // Your D3 code could be here
+  </script>
+{% endblock js %}
